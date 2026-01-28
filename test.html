@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+<script>
+    let btn = document.createElement("button");
+    btn.textContent = "Click me!";
+    document.body.appendChild(btn)
+    btn.style.backgroundColor = "red";
+    btn.style.color = "white";
+    btn.style.border = "none";
+    btn.style.padding = "10px";
+
+    let h2 = document.createElement("h2");
+    let myName = "Pratima"
+    h2.textContent = `Hello ${myName} Welcome to our website`;
+    document.body.appendChild(h2)
+
+    let boxes = document.getElementsByClassName("box")
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].textContent = `Unique text for box ${i + 1}`;
+    }
+
+    // boxes.forEach(ele, i=>ele[i].textContent = `Unique text for box ${i + 1}`)
+
+
+</script>
+
+</html>
